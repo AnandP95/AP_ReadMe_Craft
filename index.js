@@ -70,13 +70,58 @@ function writeToFile(fileName, data) {
 function init() {
     inquirer.prompt(questions).then((answers) => {
       
-      const readmeContent = generateReadmeContent(answers);
+      const templates = generateReadmeContent(answers);
   
       // Write README file
-      writeToFile('README.md', readmeContent);
+      writeToFile('README.md', templates);
     });
   }
 
+
+
+  function generateReadmeContent(answers) {
+
+    const templates = 
+     `# ${answers.title}
+
+    *[Description](#description)
+    *[Installation](#installation)
+    *[Usage](#usage)
+    *[License](#license)
+    *[Contributing](#contributing)
+    *[Tests](#tests)
+  
+    # Description
+    ${answers.description}
+
+    # Installation
+    ${answers.installation}
+
+    # Usage
+    ${answers.usage}
+
+    # License
+    ${answers.license}
+
+    # Contributing
+    ${answers.contributing}
+
+    # Tests
+    ${answers.tests}
+
+    # Contact
+    * User-Name :${answers.username}
+    * E-mail :${answers.email}`;
+    
+
+    return templates;
+
+
+
+
+
+
+  }
 // Function call to initialize app
 init();
 
