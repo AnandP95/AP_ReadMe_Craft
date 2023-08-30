@@ -84,32 +84,32 @@ function init() {
     const templates = 
      `# ${answers.title}
 
-    *[Description](#description)
-    *[Installation](#installation)
-    *[Usage](#usage)
-    *[License](#license)
-    *[Contributing](#contributing)
-    *[Tests](#tests)
+    * [Description](#description)
+    * [Installation](#installation)
+    * [Usage](#usage)
+    * [License](#license)
+    * [Contributing](#contributing)
+    * [Tests](#tests)
   
-    # Description
+    ## Description
     ${answers.description}
 
-    # Installation
+    ## Installation
     ${answers.installation}
 
-    # Usage
+    ## Usage
     ${answers.usage}
 
-    # License
+    ## License
     ${answers.license}
 
-    # Contributing
+    ## Contributing
     ${answers.contributing}
 
-    # Tests
+    ## Tests
     ${answers.tests}
 
-    # Contact
+    ## Contact
     * User-Name :${answers.username}
     * E-mail :${answers.email}`;
     
