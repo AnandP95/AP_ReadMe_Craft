@@ -2,6 +2,7 @@
 const inquirer = require('inquirer');
 
 const fs = require('fs');
+const generateMarkdown = require('./generateMarkdown');
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -29,7 +30,7 @@ const questions = [
         type: 'list',
         name: 'license',
         message: 'Choose a license for your project:',
-        choices: ['MIT', 'Apache-2.0', 'GPL-3.0', 'ISC',  'None'],
+        choices: ['MIT', 'Apache-2.0', 'GPL-3.0', 'BSD3',  'None'],
       },
       {
         type: 'input',
@@ -70,7 +71,7 @@ function writeToFile(fileName, data) {
 function init() {
     inquirer.prompt(questions).then((answers) => {
       
-      const templates = generateReadmeContent(answers);
+      const templates = generateMarkdown(answers);
   
       // Write README file
       writeToFile('README.md', templates);
@@ -79,58 +80,7 @@ function init() {
 
 
 
-  function generateReadmeContent(answers) {
-
-    
-    return `# ${answers.title}
-
-    ## Description
-    
-    ${answers.description}
-    
-    ## Table of Contents
-    
-    - [Installation](#installation)
-    - [Usage](#usage)
-    - [License](#license)
-    - [Contributing](#contributing)
-    - [Tests](#tests)
-    - [Questions](#questions)
-    
-    ## Installation
-    
-    ${answers.installation}
-    
-    ## Usage
-    
-    ${answers.usage}
-    
-    ## License
-    
-    This project is licensed under the [${answers.license} License](LICENSE).
-    
-    ## Contributing
-    
-    ${answers.contributing}
-    
-    ## Tests
-    
-    ${answers.tests}
-    
-    ## Questions
-    
-    If you have any questions, feel free to reach out:
-    
-    - GitHub: [${answers.username}](https://github.com/${answers.username})
-    - Email: [${answers.email}](mailto:${answers.email})
-    `;
-
-
-
-
-
-
-  }
+ 
 // Function call to initialize app
 init();
 
