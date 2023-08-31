@@ -1,44 +1,20 @@
-# create areadme file using node.js
+# My README Project Using Node.js
 
-  [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+   [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
   ## Description
   
-  i clone repository code
+  This is a basic command line program that generates a professional README file using terminal. This tool automates creation of readme file, its saving time   .
   
   ## Table of Contents
   
+- [My README Project Using Node.js](#my-readme-project-using-nodejs)
+  - [Description](#description)
+  - [Table of Contents](#table-of-contents)
   - [Installation](#installation)
   - [Usage](#usage)
   - [License](#license)
   - [Contributing](#contributing)
   - [Tests](#tests)
   - [Questions](#questions)
-  
-  ## Installation
-  
-  install it
-  
-  ## Usage
-  
-  use instructions here
-  
-  ## License
-  
-  [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
-  
-  ## Contributing
-  
-  contribute here
-  
-  ## Tests
-  
-  download it
-  
-  ## Questions
-  
-  If you have any questions, feel free to reach out:
-  
-  - GitHub: [anand](https://github.com/anand)
-  - Email: [a@test.com](mailto:a@test.com)
   
