@@ -74,7 +74,7 @@ function init() {
       const templates = generateMarkdown(answers);
   
       // Write README file
-      writeToFile('README.md', templates);
+      writeToFile('Sample_README.md', templates);
     });
   }
 

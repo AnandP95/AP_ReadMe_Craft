@@ -1,10 +1,10 @@
-# 34
+# Readme File using terminal
 
    [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
   ## Description
   
-  343
+  This commnd based program.
   
   ## Table of Contents
   
@@ -17,11 +17,11 @@
   
   ## Installation
   
-  23
+  npm install
   
   ## Usage
   
-  223
+  clone it and run it 
   
   ## License
   
@@ -29,16 +29,16 @@
   
   ## Contributing
   
-  23
+  contributors are welcome.
   
   ## Tests
   
-  sf
+  npm test
   
   ## Questions
   
   If you have any questions, feel free to reach out:
   
-  - GitHub: [w](https://github.com/w)
-  - Email: [w](mailto:w)
+  - GitHub: [anandp95](https://github.com/anandp95)
+  - Email: [a@test.com](mailto:a@test.com)
   
